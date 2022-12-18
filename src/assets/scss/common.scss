@@ -1,0 +1,465 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  // overflow-y: auto;
+}
+
+//隐藏滚动条----------------------------------------------------------------
+// div::-webkit-scrollbar {
+// 	display: none !important;
+// 	width: 0 !important;
+// 	height: 0 !important;
+// }
+// div::-moz-scrollbar {
+// 	display: none !important;
+// 	width: 0 !important;
+// 	height: 0 !important;
+// }
+// div::-o-scrollbar {
+// 	display: none !important;
+// 	width: 0 !important;
+// 	height: 0 !important;
+// }
+// body::-webkit-scrollbar {
+// 	display: none !important;;
+// 	width: 0 !important;
+// 	height: 0 !important;
+// }
+// body::-moz-scrollbar {
+// 	display: none !important;
+// 	width: 0 !important;
+// 	height: 0 !important;
+// }
+// body::-o-scrollbar {
+// 	display: none !important;
+// 	width: 0 !important;
+// 	height: 0 !important;
+// }
+
+::-webkit-scrollbar {
+  width: 6px;
+  /*对垂直流动条有效*/
+  height: 6px;
+  /*对水平流动条有效*/
+}
+
+::-moz-scrollbar {
+  width: 6px;
+  /*对垂直流动条有效*/
+  height: 6px;
+  /*对水平流动条有效*/
+}
+::-o-scrollbar {
+  width: 6px;
+  /*对垂直流动条有效*/
+  height: 6px;
+  /*对水平流动条有效*/
+}
+.scrollbar {
+  width: 6px;
+  /*对垂直流动条有效*/
+  height: 6px;
+  /*对水平流动条有效*/
+}
+/*定义滚动条的轨道颜色、内阴影及圆角*/
+::-webkit-scrollbar-track {
+  background-color: rgba(239, 244, 252, 1);
+  border-radius: 6px;
+}
+::-moz-scrollbar-track {
+  background-color: rgba(239, 244, 252, 1);
+  border-radius: 6px;
+}
+::-o-scrollbar-track {
+  background-color: rgba(239, 244, 252, 1);
+  border-radius: 6px;
+}
+.scrollbar-track {
+  background-color: rgba(239, 244, 252, 1);
+  border-radius: 6px;
+}
+
+/*定义滑块颜色、内阴影及圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(78, 166, 255, 1);
+}
+::-moz-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(78, 166, 255, 1);
+}
+::-o-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(78, 166, 255, 1);
+}
+.scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(78, 166, 255, 1);
+}
+
+/*定义两端按钮的样式*/
+::-webkit-scrollbar-button {
+  background-color: cyan;
+  display: none;
+}
+::-moz-scrollbar-button {
+  background-color: cyan;
+  display: none;
+}
+::-o-scrollbar-button {
+  background-color: cyan;
+  display: none;
+}
+.scrollbar-button {
+  background-color: cyan;
+  display: none;
+}
+/*定义右下角汇合处的样式*/
+::-webkit-scrollbar-corner {
+  background: rgba(239, 244, 252, 1);
+  ;
+}
+::-moz-scrollbar-corner {
+  background: rgba(239, 244, 252, 1);
+  ;
+}
+::-o-scrollbar-corner {
+  background: rgba(239, 244, 252, 1);
+  ;
+}
+.scrollbar-corner {
+  background: rgba(239, 244, 252, 1);
+  ;
+}
+//隐藏滚动条----------------------------------------------------------------
+
+//禁止选中----------------------------------------------------------
+* {
+  -webkit-touch-callout: none;
+  /*系统默认菜单被禁用*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  -moz-user-select: none;
+  /*火狐*/
+  -ms-user-select: none;
+  /*IE10*/
+  user-select: none;
+}
+
+input {
+  -webkit-user-select: auto;
+  /*webkit浏览器*/
+}
+
+textarea {
+  -webkit-user-select: auto;
+  /*webkit浏览器*/
+}
+
+//禁止选中----------------------------------------------------------
+
+// 下拉框----------------------------------------------------------
+.select .ant-select-selector {
+  height: 40px !important;
+  border-radius: 8px !important;
+  border: 1px solid #C7CBD2 !important;
+}
+
+.select .ant-select-selector .ant-select-selection-search-input {
+  height: 40px !important;
+}
+
+.select .ant-select-selection-item,
+.select .ant-select-selection-placeholder {
+  line-height: 40px !important;
+}
+
+//日期选择框
+.select .ant-picker {
+  height: 40px !important;
+  border-radius: 8px !important;
+  border: 1px solid #C7CBD2 !important;
+}
+
+// 下拉框----------------------------------------------------------
+
+
+// 表格---------------------------------
+.tableBox {
+  .ant-table-row .ant-table-cell {
+    height: 48px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4F5156;
+    line-height: 36px;
+    padding: 0px;
+    // overflow: hidden;
+  }
+
+  .ant-table-row-expand-icon {
+    top: 3px !important;
+    float: none;
+    position: relative;
+    // left: 50px;
+    // display: inline-block;
+  }
+
+  .ant-pagination-item-link {
+    border-radius: 8px !important;
+  }
+
+  .ant-pagination-item {
+    border-radius: 8px !important;
+
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      color: #818a92;
+    }
+  }
+
+  .ant-pagination-item-active {
+    background-color: rgba(64, 158, 255, 1);
+
+    a {
+      color: rgba(255, 255, 255, 1);
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .ant-select-selection-item {
+    font-size: 14px;
+    font-weight: 400;
+    color: #818a92;
+  }
+
+  .ant-pagination-options-quick-jumper {
+    font-size: 14px;
+    font-weight: 400;
+    color: #818a92;
+  }
+
+  .ant-pagination-options {
+
+    // .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    // 	font-size: 14px;
+    // font-weight: 400;
+    // color: #818a92;
+    // }
+    .ant-select-single.ant-select-open .ant-select-selection-item {
+      font-size: 14px;
+      font-weight: 400;
+      color: #818a92;
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border-radius: 8px !important;
+    }
+
+    .ant-select-selection-item {
+      padding-right: 0px !important;
+    }
+
+    .ant-select-arrow {
+      display: none;
+    }
+
+    .ant-select-dropdown {
+      display: none;
+    }
+  }
+}
+
+// 表格---------------------------------
+//表格下拉框-------------------------------------------
+.tableSelect {
+  margin-left: 21px;
+  display: inline-block;
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
+
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    padding: 0;
+  }
+
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    box-shadow: none;
+  }
+
+  .ant-select-arrow {
+    right: 0px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    line-height: 36px;
+    // top: 17px;
+    top: 14px;
+  }
+
+  .ant-select-selection-item {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4ea6ff;
+    line-height: 36px;
+  }
+
+  .ant-select-single.ant-select-open .ant-select-selection-item {
+    color: #4ea6ff;
+  }
+}
+
+.tabledropdown {
+  width: 100px !important;
+}
+
+//表格下拉框-------------------------------------------
+
+
+//抽屉--------------------------------------------------------
+.drawerStyle {
+	// transform: translateX(0px) !important;
+  .ant-drawer-content-wrapper {
+    max-width: 1050px;
+
+    .ant-drawer-header {
+      display: none !important;
+    }
+
+    .ant-drawer-body {
+      padding: 0;
+    }
+  }
+
+  .drawerMain {
+    min-width: 700px;
+    margin: 0px 32px 0px 32px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .contentMain {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+  }
+}
+
+//抽屉--------------------------------------------------------
+
+//大型抽屉
+.largeDrawerStyle {
+  .ant-drawer-content-wrapper {
+    .ant-drawer-header {
+      display: none !important;
+    }
+
+    .ant-drawer-body {
+      padding: 0;
+
+    }
+  }
+
+  .drawerMain {
+    min-width: 700px;
+    margin: 0px 32px 0px 32px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+//大型抽屉
+
+
+//弹窗--------------------------------------------------------
+.modalStyle {
+  height: 100%;
+
+  .ant-modal {
+    height: calc(100% - 200px);
+    background-color: rgba(255, 255, 255, 1);
+    // overflow-y: auto;
+    min-width: 900px;
+    max-width: 1300px;
+    padding: 0;
+
+    .ant-modal-content {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ant-modal-body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ant-modal-header {
+      display: none;
+    }
+
+    .ant-modal-body {
+      padding: 0px;
+    }
+
+    .modalHeader {
+      width: 100%;
+      height: 68px;
+      background: linear-gradient(0deg,
+          rgba(78, 166, 255, 0) 0%,
+          rgba(78, 166, 255, 0.2) 100%);
+    }
+
+    .modalMain {
+      height: 0px;
+      flex: 1 1 auto;
+      overflow-y: auto;
+      margin-top: 7px;
+      margin: 0px 52px;
+
+
+    }
+  }
+}
+
+.ant-modal{
+  .modalHeader{
+    background: linear-gradient(180deg, rgba(103,64,255,0.2) 0%, rgba(166,168,255,0) 100%) !important;
+  }
+  .top{
+    background: linear-gradient(180deg, rgba(103,64,255,0.2) 0%, rgba(166,168,255,0) 100%) !important;
+  }
+  .del_header{
+    background: linear-gradient(180deg, rgba(103,64,255,0.2) 0%, rgba(166,168,255,0) 100%) !important;
+  }
+}
+//弹窗--------------------------------------------------------
+
+//loading--------------------------------------------------------
+.aeLoading {
+  width: 100%;
+  height: 100%;
+background: rgba(0, 0, 0, 0.2);
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+left: 0;
+top:0,
+}
+//loading--------------------------------------------------------
